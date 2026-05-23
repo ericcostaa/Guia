@@ -1,0 +1,208 @@
+/* =========================
+   GUIA CSS - CONSULTA RÁPIDA
+   ========================= */
+
+/* Reset básico (remove margens padrão) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   SELETORES
+   ========================= */
+
+/* Seleciona todas as tags <p> */
+p {
+    color: black;
+}
+
+/* Classe (.classe) */
+.titulo {
+    font-size: 24px;
+}
+
+/* ID (#id) */
+#principal {
+    background-color: lightgray;
+}
+
+/* Seleção por atributo */
+input[type="text"] {
+    border: 1px solid black;
+}
+
+/* Seleciona elementos dentro de outro */
+div p {
+    color: blue;
+}
+
+/* Filho direto */
+div > p {
+    color: red;
+}
+
+/* =========================
+   CORES E TEXTO
+   ========================= */
+
+.texto {
+    color: red;                 /* cor do texto */
+    text-align: center;         /* alinhamento */
+    text-transform: uppercase;  /* maiúsculas */
+    text-decoration: underline; /* sublinhado */
+    letter-spacing: 2px;        /* espaço entre letras */
+}
+
+/* =========================
+   FONTES
+   ========================= */
+
+.fonte {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold; /* negrito */
+}
+
+/* =========================
+   BOX MODEL
+   ========================= */
+
+.caixa {
+    width: 200px;
+    height: 100px;
+
+    margin: 10px;   /* espaço externo */
+    padding: 10px;  /* espaço interno */
+
+    border: 2px solid black;
+}
+
+/* =========================
+   DISPLAY E POSICIONAMENTO
+   ========================= */
+
+.bloco {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+/* Posicionamento */
+.posicao {
+    position: relative; /* relative, absolute, fixed, sticky */
+    top: 10px;
+    left: 20px;
+}
+
+/* =========================
+   FLEXBOX
+   ========================= */
+
+.flex {
+    display: flex;
+
+    justify-content: center; /* eixo horizontal */
+    align-items: center;     /* eixo vertical */
+
+    flex-direction: row;     /* row | column */
+    gap: 10px;
+}
+
+/* =========================
+   GRID
+   ========================= */
+
+.grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr; /* 2 colunas */
+    grid-gap: 10px;
+}
+
+/* =========================
+   BACKGROUND
+   ========================= */
+
+.fundo {
+    background-color: lightblue;
+    background-image: url("imagem.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* =========================
+   BORDAS E SOMBRAS
+   ========================= */
+
+.borda {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.sombra {
+    box-shadow: 2px 2px 5px gray;
+}
+
+/* =========================
+   PSEUDO-CLASSES
+   ========================= */
+
+a:hover {
+    color: red;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+/* =========================
+   PSEUDO-ELEMENTOS
+   ========================= */
+
+p::first-letter {
+    font-size: 30px;
+}
+
+p::before {
+    content: "→ ";
+}
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightgray;
+    }
+}
+
+/* =========================
+   TRANSIÇÕES E ANIMAÇÕES
+   ========================= */
+
+.botao {
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+}
+
+/* Animação */
+@keyframes exemplo {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animado {
+    animation: exemplo 2s;
+}

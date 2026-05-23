@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Define o documento como HTML5 -->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade -->
+
+    <title>Guia HTML - Consulta</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Guia HTML Básico</h1>
+        <p>Principais tags</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#textos">Textos</a> |
+        <a href="#listas">Listas</a> |
+        <a href="#tabelas">Tabelas</a> |
+        <a href="#formularios">Formulários</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Textos -->
+        <section id="textos">
+            <h2>Textos</h2>
+
+            <p>Parágrafo</p>
+
+            <strong>Negrito</strong><br>
+            <em>Itálico</em><br>
+            <mark>Destaque</mark><br>
+            <small>Pequeno</small><br>
+            <del>Removido</del><br>
+            <ins>Inserido</ins><br>
+
+            <blockquote>Citação</blockquote>
+        </section>
+
+        <!-- Listas -->
+        <section id="listas">
+            <h2>Listas</h2>
+
+            <h3>Não ordenada</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+
+            <h3>Ordenada</h3>
+            <ol>
+                <li>Primeiro</li>
+                <li>Segundo</li>
+            </ol>
+        </section>
+
+        <!-- Tabelas -->
+        <section id="tabelas">
+            <h2>Tabelas</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João</td>
+                        <td>25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Imagens -->
+        <section>
+            <h2>Imagem</h2>
+            <img src="https://via.placeholder.com/150" alt="Exemplo">
+        </section>
+
+        <!-- Links -->
+        <section>
+            <h2>Links</h2>
+            <a href="https://www.google.com" target="_blank">Acessar</a>
+        </section>
+
+        <!-- Formulários -->
+        <section id="formularios">
+            <h2>Formulários</h2>
+
+            <form>
+                <label>Nome:</label>
+                <input type="text"><br><br>
+
+                <label>Email:</label>
+                <input type="email"><br><br>
+
+                <label>Senha:</label>
+                <input type="password"><br><br>
+
+                <label>Opções:</label>
+                <select>
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                </select><br><br>
+
+                <textarea placeholder="Digite aqui"></textarea><br><br>
+
+                <input type="checkbox"> Aceito termos<br>
+                <input type="radio" name="grupo"> Opção A
+                <input type="radio" name="grupo"> Opção B<br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Rodapé da página</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        console.log("HTML carregado");
+    </script>
+
+</body>
+</html>
